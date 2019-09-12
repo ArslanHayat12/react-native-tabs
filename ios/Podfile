@@ -1,8 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
-target 'RNFirebaseStarter' do
-  # Pods for RNFirebaseStarter
+target 'chatApp' do
+  # Pods for chatApp
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
@@ -23,15 +23,25 @@ target 'RNFirebaseStarter' do
   pod 'Fabric', '~> 1.10.2'
   pod 'Crashlytics', '~> 3.13.2'
 
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
 end
 
-target 'RNFirebaseStarter-tvOS' do
+target 'chatApp-tvOS' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for RNFirebaseStarter-tvOS
+  # Pods for chatApp-tvOS
 
-  target 'RNFirebaseStarter-tvOSTests' do
+  target 'chatApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
